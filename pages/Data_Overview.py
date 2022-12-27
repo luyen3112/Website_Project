@@ -1,6 +1,5 @@
 import pandas as pd  # pip install pandas openpyxl
 import streamlit as st  # pip install streamlit
-from streamlit_option_menu import option_menu
 
 st.set_page_config(page_title="Game Analytics",
                 page_icon = ":pig:",
@@ -17,8 +16,8 @@ def get_data():
     return game, info, match
 User_Game, user_info, User_Match = get_data()
 
-option = option_menu(None, ['User_Info', 'User_Game', 'User_Match'], 
-    menu_icon="cast", default_index=0, orientation="horizontal")
+option = st.sidebar.selectbox("Select Table",
+    ('User_Info','User_Game', 'User_Match'))
  
 
 
