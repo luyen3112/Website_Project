@@ -16,7 +16,7 @@ def get_data():
     game = pd.read_parquet("EDA/game.parquet",engine = 'fastparquet')
     info = pd.read_parquet("EDA/info.parquet", engine = 'fastparquet')
     match = pd.read_parquet("EDA/match.parquet", engine = 'fastparquet')
-    return game, info, match, data_loc, data_loc_1
+    return game, info, match
 User_Game, user_info, User_Match = get_data()
 
 option = option_menu(None, ['User_Info', 'User_Game', 'User_Match'], 
