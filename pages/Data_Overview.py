@@ -1,6 +1,6 @@
 import pandas as pd  # pip install pandas openpyxl
 import streamlit as st  # pip install streamlit
-
+from streamlit_option_menu import option_menu
 
 st.set_page_config(page_title="Game Analytics",
                 page_icon = ":pig:",
