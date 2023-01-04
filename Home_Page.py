@@ -41,7 +41,7 @@ st.sidebar.subheader('Show in Number or Percentage')
 per = st.sidebar.selectbox("Number or Percentage",
     ('Number', 'Percentage'))
 st.sidebar.subheader('Filter for Count number of User, Match, Game')
-date_select = st.sidebar.date_input("When\'s your birthday",
+date_select = st.sidebar.date_input("Day you want to see",
     datetime.date(2022, 8, 7))
 st.sidebar.subheader('Filter for Count number of Churn')
 option = st.sidebar.selectbox(
