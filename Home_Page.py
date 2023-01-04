@@ -18,7 +18,7 @@ with open('style.css') as f:
 st.title(":bar_chart: Company Dashboard")
 st.markdown("##")
 
-@st.cache
+@st.cache(allow_output_mutation=True)
 def get_data():
     game = pd.read_parquet("EDA/game.parquet",engine = 'fastparquet')
     info = pd.read_parquet("EDA/info.parquet", engine = 'fastparquet')
